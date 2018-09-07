@@ -3,7 +3,11 @@ import { IFilmModel } from '../../types/model'
 import { Link } from 'react-router-dom'
 
 interface IFilmDetailsPaneProps {
-  filmItem: IFilmModel
+  filmId: string
+  fetching: boolean,
+  error: string,
+  filmItem?: IFilmModel
+  onComponentMount: (filmId: number) => void
 }
 
 class FilmDetailsPane extends React.Component<IFilmDetailsPaneProps> {
@@ -12,13 +16,20 @@ class FilmDetailsPane extends React.Component<IFilmDetailsPaneProps> {
     super(props)
   }
 
+  public componentDidMount() {
+    if (!this.props.filmItem) {
+      this.props.onComponentMount(+this.props.filmId)
+    }
+  }
+
   public render() {
+    const {filmItem} = this.props
     return (
       <div>
         <Link to='/'>Home</Link>
-        {this.props.filmItem && Object.keys(this.props.filmItem).map((it: string) => {
+        {filmItem && Object.keys(filmItem).map((it: string) => {
           return (
-            <div key={it}>{it}: {this.props.filmItem[it]}</div>
+            <div key={it}>{it}: {filmItem[it]}</div>
           )
         })}
       </div>

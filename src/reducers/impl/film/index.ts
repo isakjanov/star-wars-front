@@ -1,16 +1,22 @@
 import { IFilmState } from '../../index'
 import {
   IFilmAction,
+  IFilmFetchFail,
+  IFilmFetchSuccess,
   IFilmListFetchFail,
   IFilmListFetchSuccess
 } from '../../../actions/film/index'
 import {
+  ACTION_FILM_FETCH_FAIL,
+  ACTION_FILM_FETCH_REQUEST,
+  ACTION_FILM_FETCH_SUCCESS,
   ACTION_FILM_LIST_FETCH_FAIL,
   ACTION_FILM_LIST_FETCH_REQUEST,
   ACTION_FILM_LIST_FETCH_SUCCESS
 } from '../../../const/actions'
 import { IFilmModel } from '../../../types/model'
 import { IFilmDTO } from '../../../types/dto'
+import { parseFilmId } from '../../../utils/url'
 
 const initialState: IFilmState = {
   fetching: false,
@@ -28,6 +34,12 @@ export const filmReducer = (state: IFilmState = initialState, action: IFilmActio
       return setFilmListFetchSuccess(state, action)
     case ACTION_FILM_LIST_FETCH_FAIL:
       return setFilmListFetchFail(state, action)
+    case ACTION_FILM_FETCH_REQUEST:
+      return setFilmFetching(state, action)
+    case ACTION_FILM_FETCH_SUCCESS:
+      return setFilmFetchSuccess(state, action)
+    case ACTION_FILM_FETCH_FAIL:
+      return setFilmFetchFail(state, action)
     default:
       return state
   }
@@ -52,10 +64,18 @@ const setFilmListFetchFail = (state: IFilmState, action: IFilmAction): IFilmStat
   return Object.assign({}, state, { fetching: false, error})
 }
 
-const parseFilmId = (url: string): number=> {
-  const result = /films\/(\d+)\/$/.exec(url)
-  if (result) {
-    return +result[1]
-  }
-  return -1
+const setFilmFetching = (state: IFilmState, action: IFilmAction): IFilmState => {
+  return Object.assign({}, state, { fetching: true })
+}
+
+const setFilmFetchSuccess = (state: IFilmState, action: IFilmAction): IFilmState => {
+  const result = (action as IFilmFetchSuccess).result
+  const filmObject = Object.assign({}, result, {id: parseFilmId(result.url)})
+  const items = {[filmObject.id]: filmObject}
+  return Object.assign({}, state, { fetching: false, error: '', items})
+}
+
+const setFilmFetchFail = (state: IFilmState, action: IFilmAction): IFilmState => {
+  const error = (action as IFilmFetchFail).error
+  return Object.assign({}, state, { fetching: false, error})
 }
