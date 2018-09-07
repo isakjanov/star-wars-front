@@ -1,4 +1,4 @@
-import { IFilmDTO } from '../../types/dto'
+import { IFilmListDTO } from '../../types/dto'
 
 export interface IFilmListFetchRequest {
   type: string
@@ -6,7 +6,7 @@ export interface IFilmListFetchRequest {
 
 export interface IFilmListFetchSuccess {
   type: string
-  result: IFilmDTO
+  result: IFilmListDTO
 }
 
 export interface IFilmListFetchFail {

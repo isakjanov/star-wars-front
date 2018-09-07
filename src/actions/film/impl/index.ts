@@ -8,7 +8,7 @@ import {
   ACTION_FILM_LIST_FETCH_REQUEST,
   ACTION_FILM_LIST_FETCH_SUCCESS
 } from '../../../const/actions'
-import { IFilmDTO } from '../../../types/dto'
+import { IFilmListDTO } from '../../../types/dto'
 import filmService from '../../../service/impl/film'
 
 export const filmListFetchRequest = (): IFilmListFetchRequest => {
@@ -17,7 +17,7 @@ export const filmListFetchRequest = (): IFilmListFetchRequest => {
   }
 }
 
-export const filmListFetchSuccess = (result: IFilmDTO): IFilmListFetchSuccess => {
+export const filmListFetchSuccess = (result: IFilmListDTO): IFilmListFetchSuccess => {
   return {
     type: ACTION_FILM_LIST_FETCH_SUCCESS,
     result
@@ -34,7 +34,7 @@ export const filmListFetchFail = (error: string): IFilmListFetchFail => {
 export const fetchFilmList = () => (dispatch: any) => {
   dispatch(filmListFetchRequest())
   filmService.getFilms()
-    .then((result: IFilmDTO) => {
+    .then((result: IFilmListDTO) => {
       dispatch(filmListFetchSuccess(result))
     })
     .catch((error: string) => {

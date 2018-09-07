@@ -1,6 +1,6 @@
-import { IFilmDTO } from '../types/dto'
+import { IFilmListDTO } from '../types/dto'
 
 export interface IFilmService {
 
-  getFilms(): Promise<IFilmDTO>
+  getFilms(): Promise<IFilmListDTO>
 }

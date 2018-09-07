@@ -31,7 +31,7 @@ class FilmListPane extends React.Component<IFilmListPaneProps> {
         {Object.keys(items).map((key: string) => {
           return (
             <div key={`film-${key}`}>
-              <Link to={`films/${items[key].episode_id}`}>
+              <Link to={`films/${items[key].id}`}>
                 {items[key].title}
               </Link>
             </div>

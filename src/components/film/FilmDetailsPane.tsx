@@ -6,17 +6,24 @@ interface IFilmDetailsPaneProps {
   filmItem: IFilmModel
 }
 
-const FilmDetailsPane = (props: IFilmDetailsPaneProps) => {
-  return (
-    <div>
-      <Link to='/'>Home</Link>
-      {props.filmItem && Object.keys(props.filmItem).map((it: string) => {
-        return (
-          <div key={it}>{it}: {props.filmItem[it]}</div>
-        )
-      })}
-    </div>
-  )
+class FilmDetailsPane extends React.Component<IFilmDetailsPaneProps> {
+
+  constructor(props: IFilmDetailsPaneProps) {
+    super(props)
+  }
+
+  public render() {
+    return (
+      <div>
+        <Link to='/'>Home</Link>
+        {this.props.filmItem && Object.keys(this.props.filmItem).map((it: string) => {
+          return (
+            <div key={it}>{it}: {this.props.filmItem[it]}</div>
+          )
+        })}
+      </div>
+    )
+  }
 }
 
 export default FilmDetailsPane
