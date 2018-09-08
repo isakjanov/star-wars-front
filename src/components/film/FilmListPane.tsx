@@ -30,7 +30,7 @@ class FilmListPane extends React.Component<IFilmListPaneProps> {
 
         {Object.keys(items).map((key: string) => {
           return (
-            <div key={`film-${key}`}>
+            <div className='font-dark-grey' key={`film-${key}`}>
               <Link to={`films/${items[key].id}`}>
                 Episode #{items[key].episode_id} {items[key].title} ({items[key].release_date})
               </Link>

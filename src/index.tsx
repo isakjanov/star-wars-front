@@ -15,6 +15,7 @@ import {
 import { Provider } from 'react-redux'
 import createBrowserHistory from 'history/createBrowserHistory'
 import App from './components/App'
+import './styles/css/index.css'
 
 const store = createStore(
   rootReducer,

@@ -1,0 +1,11 @@
+@import 'variables';
+
+@each $name, $value in $color-map {
+    .font-#{$name} {
+        color: $value;
+    }
+
+    .bg-#{$name} {
+        background-color: $value;
+    }
+}
