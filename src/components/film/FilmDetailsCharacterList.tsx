@@ -1,5 +1,6 @@
 import *  as React from 'react'
 import { ICharacterModel } from '../../types/model'
+import { Link } from 'react-router-dom'
 
 interface IFilmDetailsCharacterListProps {
   fetching: boolean
@@ -27,15 +28,19 @@ class FilmDetailsCharacterList extends React.Component<IFilmDetailsCharacterList
       <div>
         Character list
 
-        { fetching && (
+        {fetching && (
           <div>Fetching</div>
         )}
-        { error && (
+        {error && (
           <div>Error</div>
         )}
 
-        { characters.map(it => (
-          <div key={`char-${it.id}`}>Character: {it.name}</div>
+        {characters.map(it => (
+          <div key={`char-${it.id}`}>
+            <Link to={`/people/${it.id}`}>
+              Character: {it.name}
+            </Link>
+          </div>
         ))}
       </div>
     )

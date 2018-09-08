@@ -1,10 +1,15 @@
 import { ICharacterState } from '../../index'
 import {
   ICharacterAction,
+  ICharacterFetchFail,
+  ICharacterFetchSuccess,
   ICharacterListFetchFail,
   ICharacterListFetchSuccess
 } from '../../../actions/character/index'
 import {
+  ACTION_CHARACTER_FETCH_FAIL,
+  ACTION_CHARACTER_FETCH_REQUEST,
+  ACTION_CHARACTER_FETCH_SUCCESS,
   ACTION_CHARACTER_LIST_FETCH_FAIL,
   ACTION_CHARACTER_LIST_FETCH_REQUEST,
   ACTION_CHARACTER_LIST_FETCH_SUCCESS
@@ -30,6 +35,12 @@ export const characterReducer = (state: ICharacterState = initialState, action: 
       return setCharacterListFetchSuccess(state, action)
     case ACTION_CHARACTER_LIST_FETCH_FAIL:
       return setCharacterListFetchFail(state, action)
+    case ACTION_CHARACTER_FETCH_REQUEST:
+      return setCharacterFetchinig(state, action)
+    case ACTION_CHARACTER_FETCH_SUCCESS:
+      return setCharacterFetchSuccess(state, action)
+    case ACTION_CHARACTER_FETCH_FAIL:
+      return setCharacterFetchFail(state, action)
     default:
       return state
   }
@@ -62,5 +73,27 @@ const setCharacterListFetchSuccess = (state: ICharacterState, action: ICharacter
 
 const setCharacterListFetchFail = (state: ICharacterState, action: ICharacterAction): ICharacterState => {
   const error = (action as ICharacterListFetchFail).error
+  return Object.assign({}, state, { fetching: false, error})
+}
+
+const setCharacterFetchinig = (state: ICharacterState, action: ICharacterAction): ICharacterState => {
+  return Object.assign({}, state, { fetching: true })
+}
+
+const setCharacterFetchSuccess = (state: ICharacterState, action: ICharacterAction): ICharacterState => {
+  const result = (action as ICharacterFetchSuccess).result
+  const id = parseCharacterId(result.url)
+  const filmIds = result.films.map(filmUrl => parseFilmId(filmUrl))
+  const character = Object.assign({}, result, { id, filmIds })
+
+  return Object.assign({}, state, {
+    fetching: false,
+    error: '',
+    items: {...state.items, [character.id]: character}
+  })
+}
+
+const setCharacterFetchFail = (state: ICharacterState, action: ICharacterAction): ICharacterState => {
+  const error = (action as ICharacterFetchFail).error
   return Object.assign({}, state, { fetching: false, error})
 }
