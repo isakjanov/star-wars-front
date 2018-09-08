@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { ICharacterModel } from '../../types/model'
 import { RouteComponentProps } from 'react-router'
+import CharacterDetailsPlanet from '../../containers/character/CharacterDetailsPlanet'
 
 interface ICharacterDetailsPaneProps {
   id: number
@@ -32,6 +33,10 @@ class CharacterDetailsPane extends React.Component<ICharacterDetailsPaneProps> {
         {this.props.character && Object.keys(this.props.character).map(key => (
           <div>{key}: {this.props.character && this.props.character[key]}</div>
         ))}
+
+        {this.props.character && (
+          <CharacterDetailsPlanet planetUrl={this.props.character.homeworld}/>
+        )}
       </div>
     )
   }

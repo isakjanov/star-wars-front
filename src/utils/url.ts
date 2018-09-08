@@ -14,3 +14,11 @@ export const parseCharacterId = (url: string): number=> {
   }
   return -1
 }
+
+export const parsePlanetId = (url: string): number=> {
+  const result = /planets\/(\d+)\/$/.exec(url)
+  if (result) {
+    return +result[1]
+  }
+  return -1
+}
