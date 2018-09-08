@@ -32,7 +32,7 @@ class FilmListPane extends React.Component<IFilmListPaneProps> {
           return (
             <div key={`film-${key}`}>
               <Link to={`films/${items[key].id}`}>
-                {items[key].title}
+                Episode #{items[key].episode_id} {items[key].title} ({items[key].release_date})
               </Link>
             </div>
           )

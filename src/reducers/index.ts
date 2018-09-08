@@ -1,4 +1,7 @@
-import { IFilmModel } from '../types/model'
+import {
+  ICharacterModel,
+  IFilmModel
+} from '../types/model'
 
 export interface IFilmState {
   fetching: boolean
@@ -8,6 +11,13 @@ export interface IFilmState {
   items: { [key: string]: IFilmModel }
 }
 
+export interface ICharacterState {
+  fetching: boolean
+  error: string
+  items: { [key: string]: ICharacterModel}
+}
+
 export interface IRootState {
-  film: IFilmState
+  film: IFilmState,
+  character: ICharacterState
 }
