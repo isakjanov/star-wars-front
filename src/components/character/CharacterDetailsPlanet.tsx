@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { MoonLoader } from 'react-spinners'
 
 interface ICharacterDetailsPlanetProps {
   planetUrl: string
@@ -23,9 +24,14 @@ class CharacterDetailsPlanet extends React.Component<ICharacterDetailsPlanetProp
     const { planetName, fetching, error } = this.props
     return (
       <div>
-        {fetching && (<div>fetching</div>)}
+        <MoonLoader
+          sizeUnit={'px'}
+          size={18}
+          color={'#2196F3'}
+          loading={fetching}
+        />
         {error && (<div>{error}</div>)}
-        Planet: {planetName && (<span>{planetName}</span>)}
+        {planetName && (<span>{planetName}</span>)}
       </div>
     )
   }

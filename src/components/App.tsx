@@ -5,6 +5,7 @@ import {
 } from 'react-router'
 import FilmPane from './film/FilmPane'
 import CharacterPane from './character/CharacterPane'
+import { Link } from 'react-router-dom'
 
 class App extends React.Component<any> {
   constructor(props: any) {
@@ -13,8 +14,12 @@ class App extends React.Component<any> {
 
   public render() {
     return (
-      <div>
-        <div>Star wars</div>
+      <div className='App clearfix'>
+        <div className='bg-grey p1'>
+          <Link to='/'>
+            <div className='font-yellow h2'>Star wars</div>
+          </Link>
+        </div>
         <Switch>
           <Route path='/films' component={FilmPane}/>
           <Route path='/people' component={CharacterPane}/>

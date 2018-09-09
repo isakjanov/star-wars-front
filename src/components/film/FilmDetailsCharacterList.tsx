@@ -1,6 +1,7 @@
 import *  as React from 'react'
 import { ICharacterModel } from '../../types/model'
 import { Link } from 'react-router-dom'
+import { MoonLoader } from 'react-spinners'
 
 interface IFilmDetailsCharacterListProps {
   fetching: boolean
@@ -26,25 +27,39 @@ class FilmDetailsCharacterList extends React.Component<IFilmDetailsCharacterList
 
     return (
       <div>
-        Character list
-
         {fetching && (
-          <div>Fetching</div>
+          <MoonLoader
+            sizeUnit={'px'}
+            size={18}
+            color={'#2196F3'}
+            loading={fetching}
+          />
         )}
         {error && (
-          <div>Error</div>
+          <div>{error}</div>
         )}
 
         {characters.map(it => (
-          <div key={`char-${it.id}`}>
-            <Link to={`/people/${it.id}`}>
-              Character: {it.name}
-            </Link>
-          </div>
+          <CharacterListItem character={it}/>
         ))}
       </div>
     )
   }
+}
+
+interface ICharacterListItemProps {
+  character: ICharacterModel
+}
+
+const CharacterListItem = (props: ICharacterListItemProps) => {
+  const { character } = props
+  return (
+    <div className='mt1 pb1 bb-light-grey'>
+      <Link to={`/people/${character.id}`} className='pl1'>
+        {character.name}
+      </Link>
+    </div>
+  )
 }
 
 export default FilmDetailsCharacterList
