@@ -22,7 +22,7 @@ class FilmListPane extends React.Component<IFilmListPaneProps> {
   }
 
   public render() {
-    const { fetching, items } = this.props
+    const { fetching, items, error } = this.props
     return (
       <div className='p1'>
         <div className='flex items-center my2'>
@@ -33,6 +33,9 @@ class FilmListPane extends React.Component<IFilmListPaneProps> {
             color={'#2196F3'}
             loading={fetching}
           />
+          {error && (
+            <div className='font-red h6'>{error}</div>
+          )}
         </div>
 
         {Object.keys(items).map((key: string) => {
@@ -55,11 +58,12 @@ const FilmListItem = (props: IFilmListItemProps) => {
   const { film } = props
   return (
     <div className='flex flex-row items-baseline mt1'>
-      <div className='h5 font-dark-grey'> Episode #{film.episode_id}</div>
-      <div className='h3 font-grey ml2'>{film.title}</div>
-      <div className='h6 ml2 font-grey'>({film.release_date})</div>
+      <div className='Episode h5 font-dark-grey'>Episode #{film.episode_id}</div>
+      <div className='Title h3 font-grey ml2'>{film.title}</div>
+      <div className='Release h6 ml2 font-grey'>({film.release_date})</div>
     </div>
   )
 }
 
+export { FilmListItem }
 export default FilmListPane
