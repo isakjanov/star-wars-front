@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a903374-6309-4669-945a-452da558cb03" name="Default" comment="FilmListPane test">
-      <change afterPath="$PROJECT_DIR$/src/components/film/FilmDetailsPane.test.tsx" afterDir="false" />
+    <list default="true" id="4a903374-6309-4669-945a-452da558cb03" name="Default" comment="FilmDetailsPane tests">
+      <change afterPath="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/film/FilmDetailsPane.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/film/FilmDetailsPane.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +34,8 @@
           <entry key="json" value="8" />
           <entry key="scss" value="19" />
           <entry key="svg" value="2" />
-          <entry key="ts" value="27" />
-          <entry key="tsx" value="26" />
+          <entry key="ts" value="29" />
+          <entry key="tsx" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -46,8 +46,8 @@
           <entry key="JSON" value="7" />
           <entry key="SCSS" value="19" />
           <entry key="SVG" value="2" />
-          <entry key="TypeScript" value="27" />
-          <entry key="TypeScript JSX" value="26" />
+          <entry key="TypeScript" value="29" />
+          <entry key="TypeScript JSX" value="30" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
@@ -58,8 +58,8 @@
           <entry key="json" value="6" />
           <entry key="scss" value="339" />
           <entry key="ts" value="890" />
-          <entry key="tsx" value="4646" />
-          <entry key="txt" value="166" />
+          <entry key="tsx" value="5231" />
+          <entry key="txt" value="183" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -67,10 +67,10 @@
           <entry key="Git file" value="1" />
           <entry key="HTML" value="33" />
           <entry key="JSON" value="4" />
-          <entry key="PLAIN_TEXT" value="166" />
+          <entry key="PLAIN_TEXT" value="183" />
           <entry key="SCSS" value="339" />
           <entry key="TypeScript" value="890" />
-          <entry key="TypeScript JSX" value="4646" />
+          <entry key="TypeScript JSX" value="5231" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
@@ -79,32 +79,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsPane.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsPane.test.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="102" column="65" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -178,12 +153,13 @@
         <option value="$PROJECT_DIR$/src/components/character/CharacterDetailsPlanet.tsx" />
         <option value="$PROJECT_DIR$/src/components/App.tsx" />
         <option value="$PROJECT_DIR$/src/components/character/CharacterDetailsPane.tsx" />
-        <option value="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/components/film/FilmListPane.test.tsx" />
         <option value="$PROJECT_DIR$/src/components/film/FilmListPane.tsx" />
         <option value="$PROJECT_DIR$/src/components/film/FilmDetailsPane.tsx" />
         <option value="$PROJECT_DIR$/src/components/film/FilmDetailsPane.test.tsx" />
+        <option value="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx" />
+        <option value="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.test.tsx" />
       </list>
     </option>
   </component>
@@ -241,6 +217,27 @@
               <item name="star-wars-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="star-wars-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-wars-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-wars-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-wars-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="types" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -256,7 +253,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536480524235" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536481364861" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts-ts" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v8.2.1/bin/node" />
@@ -287,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.&lt;FilmDetailsPane /&gt;.should show a spinner a film is fetching">
+  <component name="RunManager" selected="Jest.&lt;FilmDetailsCharacterList /&gt;.call fetchFilmCharacters after component has been mounted">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -306,29 +303,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;FilmDetailsPane /&gt;.pass correct props to FilmDetailsCharacterList" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;FilmDetailsCharacterList /&gt;.call fetchFilmCharacters after component has been mounted" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/film/FilmDetailsPane.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.test.tsx" />
       <test-names>
-        <test-name value="&lt;FilmDetailsPane /&gt;" />
-        <test-name value="pass correct props to FilmDetailsCharacterList" />
+        <test-name value="&lt;FilmDetailsCharacterList /&gt;" />
+        <test-name value="call fetchFilmCharacters after component has been mounted" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;FilmDetailsPane /&gt;.should call fetchFilmDetails only if filmItem is undefined" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/film/FilmDetailsPane.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.test.tsx" />
       <test-names>
-        <test-name value="&lt;FilmDetailsPane /&gt;" />
-        <test-name value="should call fetchFilmDetails only if filmItem is undefined" />
+        <test-name value="&lt;FilmDetailsCharacterList /&gt;" />
+        <test-name value="characters should appear in alphabet order" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -389,19 +386,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.pass correct props to FilmDetailsCharacterList" />
-      <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.should call fetchFilmDetails only if filmItem is undefined" />
       <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.should not call fetchFilmDetails if filmItem is specified" />
       <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.should show error if it exists" />
       <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.should show a spinner a film is fetching" />
+      <item itemvalue="Jest.&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" />
+      <item itemvalue="Jest.&lt;FilmDetailsCharacterList /&gt;.call fetchFilmCharacters after component has been mounted" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.&lt;FilmDetailsCharacterList /&gt;.call fetchFilmCharacters after component has been mounted" />
+        <item itemvalue="Jest.&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" />
         <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.should show a spinner a film is fetching" />
         <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.should show error if it exists" />
         <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.should not call fetchFilmDetails if filmItem is specified" />
-        <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.should call fetchFilmDetails only if filmItem is undefined" />
-        <item itemvalue="Jest.&lt;FilmDetailsPane /&gt;.pass correct props to FilmDetailsCharacterList" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +420,7 @@
       <workItem from="1536325662548" duration="11443000" />
       <workItem from="1536383694133" duration="7494000" />
       <workItem from="1536396633330" duration="2264000" />
-      <workItem from="1536399290003" duration="17553000" />
+      <workItem from="1536399290003" duration="18909000" />
     </task>
     <task id="LOCAL-00001" summary="FilmDetails screen">
       <created>1536327305598</created>
@@ -502,49 +499,55 @@
       <option name="project" value="LOCAL" />
       <updated>1536478902420</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="FilmDetailsPane tests">
+      <created>1536480550468</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1536480550468</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_FilmDetailsPane____pass_correct_props_to_FilmDetailsCharacterList - 2018.09.09 at 13h 54m 17s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.pass correct props to FilmDetailsCharacterList" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsPane____should_show_a_spinner_a_film_is_fetching - 2018.09.09 at 14h 08m 42s.xml">
+      <configuration name="&lt;FilmDetailsPane /&gt;.should show a spinner a film is fetching" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____pass_correct_props_to_FilmDetailsCharacterList - 2018.09.09 at 13h 54m 34s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.pass correct props to FilmDetailsCharacterList" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____characters_should_appear_in_alphabet_order - 2018.09.09 at 14h 18m 41s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____pass_correct_props_to_FilmDetailsCharacterList - 2018.09.09 at 13h 55m 19s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.pass correct props to FilmDetailsCharacterList" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____characters_should_appear_in_alphabet_order - 2018.09.09 at 14h 19m 19s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____pass_correct_props_to_FilmDetailsCharacterList - 2018.09.09 at 13h 55m 36s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.pass correct props to FilmDetailsCharacterList" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____characters_should_appear_in_alphabet_order - 2018.09.09 at 14h 19m 56s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____pass_correct_props_to_FilmDetailsCharacterList - 2018.09.09 at 13h 56m 00s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.pass correct props to FilmDetailsCharacterList" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____characters_should_appear_in_alphabet_order - 2018.09.09 at 14h 21m 02s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____should_call_fetchFilmDetails_only_if_filmItem_is_undefined - 2018.09.09 at 13h 59m 25s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.should call fetchFilmDetails only if filmItem is undefined" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____characters_should_appear_in_alphabet_order - 2018.09.09 at 14h 21m 54s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____should_call_fetchFilmDetails_only_if_filmItem_is_undefined - 2018.09.09 at 14h 00m 46s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.should call fetchFilmDetails only if filmItem is undefined" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____characters_should_appear_in_alphabet_order - 2018.09.09 at 14h 22m 18s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.characters should appear in alphabet order" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____should_not_call_fetchFilmDetails_if_filmItem_is_specified - 2018.09.09 at 14h 02m 01s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.should not call fetchFilmDetails if filmItem is specified" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____call_fetchFilmCharacters_after_component_has_been_mounted - 2018.09.09 at 14h 40m 03s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.call fetchFilmCharacters after component has been mounted" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____should_show_error_if_it_exists - 2018.09.09 at 14h 03m 11s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.should show error if it exists" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____call_fetchFilmCharacters_after_component_has_been_mounted - 2018.09.09 at 14h 41m 11s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.call fetchFilmCharacters after component has been mounted" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="_FilmDetailsPane____should_show_error_if_it_exists - 2018.09.09 at 14h 05m 03s.xml">
-      <configuration name="&lt;FilmDetailsPane /&gt;.should show error if it exists" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="_FilmDetailsCharacterList____call_fetchFilmCharacters_after_component_has_been_mounted - 2018.09.09 at 14h 41m 26s.xml">
+      <configuration name="&lt;FilmDetailsCharacterList /&gt;.call fetchFilmCharacters after component has been mounted" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38754000" />
+    <option name="totallyTimeSpent" value="40110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22617124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22617124" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -553,7 +556,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329927" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -593,16 +596,10 @@
     <MESSAGE value="Applied styles" />
     <MESSAGE value="Sort characters in alphabet order" />
     <MESSAGE value="FilmListPane test" />
-    <option name="LAST_COMMIT_MESSAGE" value="FilmListPane test" />
+    <MESSAGE value="FilmDetailsPane tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="FilmDetailsPane tests" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tslint.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/impl/film.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -628,13 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="8" column="28" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/impl/film/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="61" selection-start-line="61" selection-end-line="64" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -895,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/film/FilmPane.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -923,16 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/film/FilmListPane.test.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="107" column="81" selection-start-line="107" selection-start-column="81" selection-end-line="107" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/film/FilmListPane.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -940,17 +913,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsPane.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="287">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -959,11 +925,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsPane.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="102" column="65" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="65" />
+        <state relative-caret-position="1545">
+          <caret line="103" column="66" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/film/FilmListPane.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="10" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="36" column="18" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/impl/film/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="70" column="66" lean-forward="true" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="72" column="73" lean-forward="true" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
         </state>
       </provider>
     </entry>

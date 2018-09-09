@@ -42,7 +42,7 @@ class FilmDetailsCharacterList extends React.Component<IFilmDetailsCharacterList
         {characters
           .sort(this.compareCharactersName)
           .map(it => (
-          <CharacterListItem character={it}/>
+          <CharacterListItem character={it} key={`character-${it.id}`}/>
         ))}
       </div>
     )
