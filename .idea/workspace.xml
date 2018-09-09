@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a903374-6309-4669-945a-452da558cb03" name="Default" comment="Installed sass preprocessor">
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/layout.scss" afterDir="false" />
+    <list default="true" id="4a903374-6309-4669-945a-452da558cb03" name="Default" comment="Applied styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/character/CharacterDetailsPane.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/character/CharacterDetailsPane.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/character/CharacterDetailsPlanet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/character/CharacterDetailsPlanet.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/film/FilmDetailsPane.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/film/FilmDetailsPane.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/film/FilmListPane.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/film/FilmListPane.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/scss/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/scss/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/variables.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +34,7 @@
           <entry key="scss" value="19" />
           <entry key="svg" value="2" />
           <entry key="ts" value="25" />
-          <entry key="tsx" value="20" />
+          <entry key="tsx" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -59,7 +46,7 @@
           <entry key="SCSS" value="19" />
           <entry key="SVG" value="2" />
           <entry key="TypeScript" value="25" />
-          <entry key="TypeScript JSX" value="20" />
+          <entry key="TypeScript JSX" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -69,8 +56,8 @@
           <entry key="json" value="4" />
           <entry key="scss" value="339" />
           <entry key="ts" value="890" />
-          <entry key="tsx" value="2374" />
-          <entry key="txt" value="90" />
+          <entry key="tsx" value="2573" />
+          <entry key="txt" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -78,10 +65,10 @@
           <entry key="Git file" value="1" />
           <entry key="HTML" value="33" />
           <entry key="JSON" value="4" />
-          <entry key="PLAIN_TEXT" value="90" />
+          <entry key="PLAIN_TEXT" value="108" />
           <entry key="SCSS" value="339" />
           <entry key="TypeScript" value="890" />
-          <entry key="TypeScript JSX" value="2374" />
+          <entry key="TypeScript JSX" value="2573" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -91,13 +78,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/character/CharacterDetailsPane.tsx">
+        <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -173,12 +157,12 @@
         <option value="$PROJECT_DIR$/src/styles/scss/colors.scss" />
         <option value="$PROJECT_DIR$/src/components/film/FilmListPane.tsx" />
         <option value="$PROJECT_DIR$/src/styles/scss/variables.scss" />
-        <option value="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx" />
         <option value="$PROJECT_DIR$/src/components/film/FilmDetailsPane.tsx" />
         <option value="$PROJECT_DIR$/src/styles/scss/layout.scss" />
         <option value="$PROJECT_DIR$/src/components/character/CharacterDetailsPlanet.tsx" />
         <option value="$PROJECT_DIR$/src/components/App.tsx" />
         <option value="$PROJECT_DIR$/src/components/character/CharacterDetailsPane.tsx" />
+        <option value="$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx" />
       </list>
     </option>
   </component>
@@ -230,7 +214,7 @@
               <item name="star-wars-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="character" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="star-wars-web" type="b2602c69:ProjectViewProjectNode" />
@@ -258,7 +242,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536475627229" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536476397724" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v8.2.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -372,7 +356,7 @@
       <workItem from="1536325662548" duration="11443000" />
       <workItem from="1536383694133" duration="7494000" />
       <workItem from="1536396633330" duration="2264000" />
-      <workItem from="1536399290003" duration="12811000" />
+      <workItem from="1536399290003" duration="13580000" />
     </task>
     <task id="LOCAL-00001" summary="FilmDetails screen">
       <created>1536327305598</created>
@@ -430,17 +414,24 @@
       <option name="project" value="LOCAL" />
       <updated>1536407078387</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Applied styles">
+      <created>1536475692738</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1536475692738</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34012000" />
+    <option name="totallyTimeSpent" value="34781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16801292" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16801292" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -486,7 +477,8 @@
     <MESSAGE value="CharacterDetailsPane" />
     <MESSAGE value="Fetched and displayed character's home planet" />
     <MESSAGE value="Installed sass preprocessor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed sass preprocessor" />
+    <MESSAGE value="Applied styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Applied styles" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.tsx" />
@@ -742,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/film/FilmListPane.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -845,6 +830,13 @@
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/film/FilmDetailsCharacterList.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>

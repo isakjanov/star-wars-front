@@ -39,11 +39,23 @@ class FilmDetailsCharacterList extends React.Component<IFilmDetailsCharacterList
           <div>{error}</div>
         )}
 
-        {characters.map(it => (
+        {characters
+          .sort(this.compareCharactersName)
+          .map(it => (
           <CharacterListItem character={it}/>
         ))}
       </div>
     )
+  }
+
+  private compareCharactersName = (ch1: ICharacterModel, ch2: ICharacterModel): number => {
+    if (ch1.name > ch2.name) {
+      return 1
+    }
+    if (ch1.name < ch2.name) {
+      return -1
+    }
+    return 0
   }
 }
 
