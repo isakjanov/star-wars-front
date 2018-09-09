@@ -25,44 +25,46 @@ class FilmDetailsPane extends React.Component<IFilmDetailsPaneProps> {
   }
 
   public render() {
-    const { filmItem, fetching } = this.props
+    const { filmItem, fetching, error } = this.props
     return (
       <div className='p1'>
+        {error && (
+          <div className='h6 font-red'>{error}</div>
+        )}
+        <MoonLoader
+          sizeUnit={'px'}
+          size={18}
+          color={'#2196F3'}
+          loading={fetching}
+        />
         {filmItem && (
           <div className='col-12 flex'>
             <div className='col-6'>
-
-              <div className='flex items-center my2'>
+              <div className='my2'>
                 {filmItem && (
-                  <div className='h3 font-blue mr3'>{filmItem.title}</div>
+                  <div className='Title h3 font-blue mr3'>{filmItem.title}</div>
                 )}
-                <MoonLoader
-                  sizeUnit={'px'}
-                  size={18}
-                  color={'#2196F3'}
-                  loading={fetching}
-                />
               </div>
 
               <div>
                 <span className='font-grey'>Episode: </span>
-                <span>{filmItem.episode_id}</span>
+                <span className='Episode'>{filmItem.episode_id}</span>
               </div>
               <div>
                 <span className='font-grey'>Director: </span>
-                <span>{filmItem.director}</span>
+                <span className='Director'>{filmItem.director}</span>
               </div>
               <div>
                 <span className='font-grey'>Producer: </span>
-                <span>{filmItem.producer}</span>
+                <span className='Producer'>{filmItem.producer}</span>
               </div>
               <div>
                 <span className='font-grey'>Release date: </span>
-                <span>{filmItem.release_date}</span>
+                <span className='Release'>{filmItem.release_date}</span>
               </div>
               <div className='mt3'>
                 <span className='font-grey'>Description: </span>
-                <div className='pt1'>{filmItem.opening_crawl}</div>
+                <div className='Description pt1'>{filmItem.opening_crawl}</div>
               </div>
             </div>
 
